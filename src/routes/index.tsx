@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
+import { AscLogo } from "@/components/AscLogo";
 import {
   ArrowUpRight,
   ArrowRight,
@@ -993,13 +994,13 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid md:grid-cols-12 gap-12">
           <div className="md:col-span-5">
-            <div className="flex items-center">
-              <img
-                src={ascBrand.url}
-                alt="Axiom Secure Crafts — Built with Purpose. Secured by Design."
-                className="h-20 w-auto object-contain"
-                draggable={false}
-              />
+            {/* Replaced broken image branding with crisp SVG branding block */}
+            <div className="flex items-center gap-3 select-none">
+              <AscLogo size={44} className="text-white" />
+              <div className="flex flex-col justify-center">
+                <span className="text-sm font-semibold tracking-[0.15em] text-white leading-none">AXIOM</span>
+                <span className="text-[11px] font-semibold tracking-[0.15em] text-zinc-400 mt-1.5 leading-none">SECURE CRAFTS</span>
+              </div>
             </div>
             <p className="mt-6 text-sm text-muted-foreground max-w-sm leading-relaxed">
               A technology partner for organizations and innovators building the next generation

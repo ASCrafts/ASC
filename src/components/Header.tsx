@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import ascMark from "@/assets/asc-logo-old.png.asset.json";
+import { AscLogo } from "./AscLogo"; // Import the built-in SVG logo
 
 const NAV = [
   { label: "Who We Are", href: "#whoweare" },
@@ -42,12 +42,9 @@ export function Header() {
           onClick={() => setRevealed((v) => !v)}
           className="flex items-center gap-3 group select-none outline-none"
         >
-          <img
-            src={ascMark.url}
-            alt="Axiom Secure Crafts"
-            className="h-8 md:h-10 w-auto object-contain"
-            draggable={false}
-          />
+          {/* Replaced broken img tag with pure code SVG logo */}
+          <AscLogo size={36} className="text-white group-hover:text-primary transition-colors" />
+          
           <span
             aria-hidden={!revealed}
             className={[
