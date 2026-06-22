@@ -1,8 +1,8 @@
 import { j as jsxRuntimeExports } from "./_libs/react.mjs";
 import { L as Link } from "./_libs/tanstack__react-router.mjs";
-import { H as Header } from "./_ssr/Header-DJrkEuxy.mjs";
+import { H as Header } from "./_ssr/Header-CwfR_vE6.mjs";
 import { S as SectionLabel } from "./_ssr/SectionLabel-Dv-KWyQT.mjs";
-import { R as Route, D as DOMAINS, P as PROGRAM_ORDER } from "./_ssr/router-Bd6Je97W.mjs";
+import { R as Route, D as DOMAINS, P as PROGRAM_ORDER } from "./_ssr/router-CWK1n6iC.mjs";
 import { x as ArrowLeft, s as Clock, r as GraduationCap, d as ArrowRight, t as Check, e as Layers } from "./_libs/lucide-react.mjs";
 import "./_libs/tanstack__router-core.mjs";
 import "./_libs/tanstack__history.mjs";

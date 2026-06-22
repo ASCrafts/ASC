@@ -1,6 +1,6 @@
 import { r as reactExports, j as jsxRuntimeExports } from "../_libs/react.mjs";
 import { L as Link } from "../_libs/tanstack__react-router.mjs";
-import { u as useTheme } from "./router-Bd6Je97W.mjs";
+import { u as useTheme } from "./router-CWK1n6iC.mjs";
 import { S as Sun, b as Moon, X, c as Menu } from "../_libs/lucide-react.mjs";
 function AscLogo({ className, size, alt = "Axiom Secure Crafts" }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(

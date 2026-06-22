@@ -1,9 +1,9 @@
 import { j as jsxRuntimeExports } from "../_libs/react.mjs";
 import { L as Link } from "../_libs/tanstack__react-router.mjs";
-import { H as Header } from "./Header-DJrkEuxy.mjs";
+import { H as Header } from "./Header-CwfR_vE6.mjs";
 import { S as SectionLabel } from "./SectionLabel-Dv-KWyQT.mjs";
 import { E as ENROLL_URL } from "./constants-BLkrYBTQ.mjs";
-import { b as aiAutoImg } from "./router-Bd6Je97W.mjs";
+import { b as aiAutoImg } from "./router-CWK1n6iC.mjs";
 import { d as ArrowRight, A as ArrowUpRight, W as Workflow, h as Bot, i as Settings, Z as Zap, j as ChartLine, f as Cpu } from "../_libs/lucide-react.mjs";
 import "../_libs/tanstack__router-core.mjs";
 import "../_libs/tanstack__history.mjs";

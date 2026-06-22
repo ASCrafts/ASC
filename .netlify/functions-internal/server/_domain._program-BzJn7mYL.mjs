@@ -1,6 +1,6 @@
 import { j as jsxRuntimeExports } from "./_libs/react.mjs";
 import { L as Link } from "./_libs/tanstack__react-router.mjs";
-import { H as Header } from "./_ssr/Header-DJrkEuxy.mjs";
+import { H as Header } from "./_ssr/Header-CwfR_vE6.mjs";
 import { x as ArrowLeft } from "./_libs/lucide-react.mjs";
 import "./_libs/tanstack__router-core.mjs";
 import "./_libs/tanstack__history.mjs";
@@ -15,13 +15,13 @@ import "crypto";
 import "async_hooks";
 import "stream";
 import "./_libs/isbot.mjs";
-import "./_ssr/router-Bd6Je97W.mjs";
+import "./_ssr/router-CWK1n6iC.mjs";
 import "./_libs/tanstack__query-core.mjs";
 import "./_libs/tanstack__react-query.mjs";
-const SplitErrorComponent = () => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-background text-foreground", children: [
+const SplitNotFoundComponent = () => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-background text-foreground", children: [
   /* @__PURE__ */ jsxRuntimeExports.jsx(Header, {}),
   /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "mx-auto max-w-3xl px-5 py-32 text-center", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "font-display text-4xl", children: "Something went wrong" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "font-display text-4xl", children: "Program not found" }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs(Link, { to: "/", className: "mt-6 inline-flex items-center gap-2 text-primary", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowLeft, { size: 16 }),
       " Back to home"
@@ -29,5 +29,5 @@ const SplitErrorComponent = () => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", 
   ] })
 ] });
 export {
-  SplitErrorComponent as errorComponent
+  SplitNotFoundComponent as notFoundComponent
 };
