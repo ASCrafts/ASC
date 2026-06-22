@@ -1,6 +1,6 @@
 import { j as jsxRuntimeExports } from "../_libs/react.mjs";
 import { L as Link } from "../_libs/tanstack__react-router.mjs";
-import { H as Header } from "./Header-CwfR_vE6.mjs";
+import { H as Header } from "./Header-Bu7kWG0W.mjs";
 import { A as ArrowUpRight, G as Globe, L as Linkedin, a as Github, M as Mail } from "../_libs/lucide-react.mjs";
 import "../_libs/tanstack__router-core.mjs";
 import "../_libs/tanstack__history.mjs";
@@ -15,7 +15,7 @@ import "crypto";
 import "async_hooks";
 import "stream";
 import "../_libs/isbot.mjs";
-import "./router-CWK1n6iC.mjs";
+import "./router-BAqzjgTI.mjs";
 import "../_libs/tanstack__query-core.mjs";
 import "../_libs/tanstack__react-query.mjs";
 const LEADERSHIP = [{

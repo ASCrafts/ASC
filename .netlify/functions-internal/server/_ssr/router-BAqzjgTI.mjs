@@ -163,7 +163,7 @@ function RootComponent() {
   const { queryClient } = Route$8.useRouteContext();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(QueryClientProvider, { client: queryClient, children: /* @__PURE__ */ jsxRuntimeExports.jsx(ThemeProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {}) }) });
 }
-const $$splitComponentImporter$7 = () => import("./team-BP2jFPae.mjs");
+const $$splitComponentImporter$7 = () => import("./team-2oPgjFwD.mjs");
 const Route$7 = createFileRoute("/team")({
   head: () => ({
     meta: [{
@@ -182,7 +182,7 @@ const Route$7 = createFileRoute("/team")({
   component: lazyRouteComponent($$splitComponentImporter$7, "component")
 });
 const aiFsImg = "/assets/img-ai-fullstack-DNxEShpY.jpg";
-const $$splitComponentImporter$6 = () => import("./ai-fullstack-WMjZ6nFg.mjs");
+const $$splitComponentImporter$6 = () => import("./ai-fullstack-Cd79plmU.mjs");
 const Route$6 = createFileRoute("/ai-fullstack")({
   head: () => ({
     meta: [{
@@ -204,7 +204,7 @@ const Route$6 = createFileRoute("/ai-fullstack")({
   component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
 const aiAutoImg = "/assets/img-ai-automation-B8AJ7tkW.jpg";
-const $$splitComponentImporter$5 = () => import("./ai-automation-CssZHOMO.mjs");
+const $$splitComponentImporter$5 = () => import("./ai-automation-Cagx764s.mjs");
 const Route$5 = createFileRoute("/ai-automation")({
   head: () => ({
     meta: [{
@@ -225,7 +225,7 @@ const Route$5 = createFileRoute("/ai-automation")({
   }),
   component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-const $$splitComponentImporter$4 = () => import("./index-BE5wU2Qo.mjs");
+const $$splitComponentImporter$4 = () => import("./index-BfeUBRqJ.mjs");
 const Route$4 = createFileRoute("/")({
   head: () => ({
     meta: [{
@@ -247,7 +247,7 @@ const Route$4 = createFileRoute("/")({
   component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
 const cyberImg = "/assets/img-cybersecurity-Cb-pXQ5M.jpg";
-const $$splitComponentImporter$3 = () => import("./cybersecurity.index-B6VxgDDf.mjs");
+const $$splitComponentImporter$3 = () => import("./cybersecurity.index-XGCLO72Z.mjs");
 const Route$3 = createFileRoute("/cybersecurity/")({
   head: () => ({
     meta: [{
@@ -268,7 +268,7 @@ const Route$3 = createFileRoute("/cybersecurity/")({
   }),
   component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-const $$splitComponentImporter$2 = () => import("./cybersecurity.professional-BQn7MTbH.mjs");
+const $$splitComponentImporter$2 = () => import("./cybersecurity.professional-BYaRSEua.mjs");
 const Route$2 = createFileRoute("/cybersecurity/professional")({
   head: () => ({
     meta: [{
@@ -289,7 +289,7 @@ const Route$2 = createFileRoute("/cybersecurity/professional")({
   }),
   component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-const $$splitComponentImporter$1 = () => import("./cybersecurity.foundation-BgiHxZtk.mjs");
+const $$splitComponentImporter$1 = () => import("./cybersecurity.foundation-R0i9EAi6.mjs");
 const Route$1 = createFileRoute("/cybersecurity/foundation")({
   head: () => ({
     meta: [{
@@ -541,9 +541,9 @@ const PROGRAM_ORDER = [
   "professional-program",
   "bootcamp"
 ];
-const $$splitErrorComponentImporter = () => import("../_domain._program-DF0PHaLq.mjs");
-const $$splitNotFoundComponentImporter = () => import("../_domain._program-BzJn7mYL.mjs");
-const $$splitComponentImporter = () => import("../_domain._program-Cj1MBlRZ.mjs");
+const $$splitErrorComponentImporter = () => import("../_domain._program-DgXyKovR.mjs");
+const $$splitNotFoundComponentImporter = () => import("../_domain._program-DlWJ7rDe.mjs");
+const $$splitComponentImporter = () => import("../_domain._program-aVYCYnrz.mjs");
 const Route = createFileRoute("/$domain/$program")({
   beforeLoad: ({
     params

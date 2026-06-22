@@ -1,40 +1,18 @@
 import { r as reactExports, j as jsxRuntimeExports } from "../_libs/react.mjs";
 import { L as Link } from "../_libs/tanstack__react-router.mjs";
-import { u as useTheme } from "./router-CWK1n6iC.mjs";
+import { u as useTheme } from "./router-BAqzjgTI.mjs";
 import { S as Sun, b as Moon, X, c as Menu } from "../_libs/lucide-react.mjs";
-function AscLogo({ className, size, alt = "Axiom Secure Crafts" }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "svg",
+function BrandLogo({ className = "w-auto", alt = "Axiom Secure Crafts" }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "img",
     {
-      width: size,
-      height: size,
-      viewBox: "0 0 64 64",
-      fill: "none",
-      xmlns: "http://www.w3.org/2000/svg",
-      role: "img",
-      "aria-label": alt,
+      src: "/favicon.ico",
+      alt,
+      draggable: false,
       className,
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("title", { children: alt }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("defs", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("clipPath", { id: "asc-tri", children: /* @__PURE__ */ jsxRuntimeExports.jsx("polygon", { points: "32,4 60,56 4,56" }) }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "polygon",
-          {
-            points: "32,4 60,56 4,56",
-            stroke: "currentColor",
-            strokeWidth: "3",
-            strokeLinejoin: "round",
-            fill: "none"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("g", { clipPath: "url(#asc-tri)", fill: "currentColor", children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M22 22 H44 V28 H28 V31 H44 V44 H22 V38 H38 V35 H22 Z" }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("polygon", { points: "52,56 46,46 58,46", fill: "#E53935" })
-      ]
+      style: { height: "65px" }
     }
   );
-}
-function BrandLogo({ className = "h-7 md:h-8 w-auto", alt = "Axiom Secure Crafts" }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(AscLogo, { className, alt });
 }
 const NAV = [
   { label: "Who We Are", to: "/", hash: "whoweare" },
