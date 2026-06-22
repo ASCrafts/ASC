@@ -1,10 +1,10 @@
-type Props = { className?: string; size?: number };
+type Props = { className?: string; size?: number; alt?: string };
 
 /**
  * Stylized recreation of the ASC mark: outer triangle with embedded S
  * and a small red triangle at the bottom-right corner.
  */
-export function AscLogo({ className, size = 32 }: Props) {
+export function AscLogo({ className, size, alt = "Axiom Secure Crafts" }: Props) {
   return (
     <svg
       width={size}
@@ -12,9 +12,11 @@ export function AscLogo({ className, size = 32 }: Props) {
       viewBox="0 0 64 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
+      role="img"
+      aria-label={alt}
       className={className}
     >
+      <title>{alt}</title>
       <defs>
         <clipPath id="asc-tri">
           <polygon points="32,4 60,56 4,56" />
@@ -37,3 +39,4 @@ export function AscLogo({ className, size = 32 }: Props) {
     </svg>
   );
 }
+
