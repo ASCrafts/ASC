@@ -1,0 +1,96 @@
+const int leds[] = {4, 5, 6};
+int mode = 0;
+
+void setup() {
+  for (int pin : leds) pinMode(pin, OUTPUT);
+  pinMode(2, INPUT_PULLUP); 
+  pinMode(3, INPUT_PULLUP);
+}
+
+void loop() {
+  if (!digitalRead(2)) mode = 1; 
+  if (!digitalRead(3)) mode = 2; 
+
+  for (int i = 0; i < 3; i++) {
+    if (mode == 1) digitalWrite(leds[i], (millis() / 200) % 2);      
+    if (mode == 2) digitalWrite(leds[i], (millis() / 200) % 3 == i); 
+  }
+}
+
+------------------------------------------------------------------------
+
+
+#include <Servo.h>
+
+Servo myServo;
+
+void setup() {
+  myServo.attach(9);     // Attach servo to pin 9
+  pinMode(2, INPUT);     // Attach IR sensor to pin 2
+}
+
+void loop() {
+  // If IR is HIGH (no obstacle) -> 0°, if LOW (obstacle detected) -> 90°
+  myServo.write(digitalRead(2) ? 0 : 90); 
+  delay(15);             // Small delay to allow the servo to reach the position
+}
+
+-----------------------------------------------------------------------------------
+
+
+
+#include <LiquidCrystal.h>
+
+// Initialize LCD with pins: RS=7, EN=6, D4=5, D5=4, D6=3, D7=2
+LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
+
+void setup() {
+  lcd.begin(16, 2);
+  pinMode(8, OUTPUT); // Trig Pin 
+  pinMode(9, INPUT);  // Echo Pin 
+}
+
+void loop() {
+  // Send a 10-microsecond pulse to trigger the sensor
+  digitalWrite(8, HIGH); delayMicroseconds(10); digitalWrite(8, LOW);
+  
+  // Calculate distance (pulse time * 0.01715 cm/us) and display it
+  lcd.setCursor(0, 0);
+  lcd.print(String(pulseIn(9, HIGH) * 0.01715) + " cm    "); 
+  
+  delay(250); // Short delay before next reading
+}
+
+________________________________________________________________________________________
+
+void setup() {
+  pinMode(2, INPUT);   // PIR Sensor
+  pinMode(12, OUTPUT); // Buzzer
+  pinMode(13, OUTPUT); // LED
+}
+
+void loop() {
+  if (digitalRead(2)) {  // If motion is detected
+    // Trigger alarm pattern (rapid flash/beep)
+    digitalWrite(12, HIGH); digitalWrite(13, HIGH); delay(100);
+    digitalWrite(12, LOW);  digitalWrite(13, LOW);  delay(100);
+  } else {
+    // Keep everything OFF when safe
+    digitalWrite(12, LOW);  digitalWrite(13, LOW);
+  }
+}
+
+
+--------------------------------------------------------------------------------------------
+
+
+void setup() {
+  pinMode(13, OUTPUT); // LED Pin
+}
+
+void loop() {
+  // LDR value 500 ku keela vandha (darkness), Pin 13 HIGH aagum.
+  digitalWrite(13, analogRead(A0) > 500);
+}
+
+---------------------------------------------------------------------------------------------------
